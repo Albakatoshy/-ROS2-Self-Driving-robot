@@ -1,0 +1,35 @@
+[0.007s] Invoking command in '/home/abood/bumperbot_ws/build/bumperbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abood/ros2_test/install/turtlesim_catch_them_all:/home/abood/ros2_test/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/abood/bumperbot_ws/src/bumperbot_description -DCMAKE_INSTALL_PREFIX=/home/abood/bumperbot_ws/install/bumperbot_description
+[0.042s] -- The C compiler identification is GNU 11.4.0
+[0.076s] -- The CXX compiler identification is GNU 11.4.0
+[0.081s] -- Detecting C compiler ABI info
+[0.122s] -- Detecting C compiler ABI info - done
+[0.126s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.127s] -- Detecting C compile features
+[0.127s] -- Detecting C compile features - done
+[0.129s] -- Detecting CXX compiler ABI info
+[0.178s] -- Detecting CXX compiler ABI info - done
+[0.183s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.183s] -- Detecting CXX compile features
+[0.183s] -- Detecting CXX compile features - done
+[0.188s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.284s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.357s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[0.357s]   By not providing "Findament_lint_auto.cmake" in CMAKE_MODULE_PATH this
+[0.357s]   project has asked CMake to find a package configuration file provided by
+[0.357s]   "ament_lint_auto", but CMake did not find one.
+[0.357s] 
+[0.357s]   Could not find a package configuration file provided by "ament_lint_auto"
+[0.357s]   with any of the following names:
+[0.357s] 
+[0.357s]     ament_lint_autoConfig.cmake
+[0.357s]     ament_lint_auto-config.cmake
+[0.357s] 
+[0.357s]   Add the installation prefix of "ament_lint_auto" to CMAKE_PREFIX_PATH or
+[0.357s]   set "ament_lint_auto_DIR" to a directory containing one of the above files.
+[0.357s]   If "ament_lint_auto" provides a separate development package or SDK, be
+[0.357s]   sure it has been installed.
+[0.357s] 
+[0.357s] [0m
+[0.357s] -- Configuring incomplete, errors occurred!
+[0.358s] See also "/home/abood/bumperbot_ws/build/bumperbot_description/CMakeFiles/CMakeOutput.log".
+[0.360s] Invoked command in '/home/abood/bumperbot_ws/build/bumperbot_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abood/ros2_test/install/turtlesim_catch_them_all:/home/abood/ros2_test/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/abood/bumperbot_ws/src/bumperbot_description -DCMAKE_INSTALL_PREFIX=/home/abood/bumperbot_ws/install/bumperbot_description
