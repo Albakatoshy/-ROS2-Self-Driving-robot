@@ -1,0 +1,63 @@
+[0.011s] Invoking command in '/home/abood/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abood/ros2_test/install/turtlesim_catch_them_all:/home/abood/ros2_test/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/abood/bumperbot_ws/build/bumperbot_controller -- -j16 -l16
+[0.026s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.105s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.123s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.125s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.129s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.135s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.143s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.162s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.163s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.238s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.268s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.314s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.357s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.357s] -- Added test 'lint_cmake' to check CMake code style
+[0.357s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.358s] -- Added test 'xmllint' to check XML markup files
+[0.358s] -- Configuring done
+[0.361s] -- Generating done
+[0.363s] -- Build files have been written to: /home/abood/bumperbot_ws/build/bumperbot_controller
+[0.390s] Built target ament_cmake_python_copy_bumperbot_controller
+[0.547s] running egg_info
+[0.547s] writing bumperbot_controller.egg-info/PKG-INFO
+[0.547s] writing dependency_links to bumperbot_controller.egg-info/dependency_links.txt
+[0.547s] writing top-level names to bumperbot_controller.egg-info/top_level.txt
+[0.549s] reading manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[0.549s] writing manifest file 'bumperbot_controller.egg-info/SOURCES.txt'
+[0.566s] Built target ament_cmake_python_build_bumperbot_controller_egg
+[0.573s] Invoked command in '/home/abood/bumperbot_ws/build/bumperbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abood/ros2_test/install/turtlesim_catch_them_all:/home/abood/ros2_test/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/abood/bumperbot_ws/build/bumperbot_controller -- -j16 -l16
+[0.574s] Invoking command in '/home/abood/bumperbot_ws/build/bumperbot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abood/ros2_test/install/turtlesim_catch_them_all:/home/abood/ros2_test/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/abood/bumperbot_ws/build/bumperbot_controller
+[0.579s] -- Install configuration: ""
+[0.579s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/pythonpath.sh
+[0.579s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/pythonpath.dsv
+[0.579s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller-0.0.0-py3.10.egg-info
+[0.579s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller-0.0.0-py3.10.egg-info/PKG-INFO
+[0.579s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller-0.0.0-py3.10.egg-info/top_level.txt
+[0.579s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.579s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.579s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller
+[0.579s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller/__init__.py
+[0.579s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller/simple_controller.py
+[0.601s] Listing '/home/abood/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages/bumperbot_controller'...
+[0.604s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/config
+[0.604s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/config/bumperbot_controllers.yaml
+[0.604s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/launch
+[0.604s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/launch/controller.launch.py
+[0.604s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/lib/bumperbot_controller/simple_controller.py
+[0.604s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/package_run_dependencies/bumperbot_controller
+[0.604s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/parent_prefix_path/bumperbot_controller
+[0.604s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/ament_prefix_path.sh
+[0.604s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/ament_prefix_path.dsv
+[0.604s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/path.sh
+[0.604s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/environment/path.dsv
+[0.604s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.bash
+[0.605s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.sh
+[0.605s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.zsh
+[0.605s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/local_setup.dsv
+[0.605s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/package.dsv
+[0.605s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/ament_index/resource_index/packages/bumperbot_controller
+[0.605s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/cmake/bumperbot_controllerConfig.cmake
+[0.605s] -- Up-to-date: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/cmake/bumperbot_controllerConfig-version.cmake
+[0.605s] -- Installing: /home/abood/bumperbot_ws/install/bumperbot_controller/share/bumperbot_controller/package.xml
+[0.607s] Invoked command in '/home/abood/bumperbot_ws/build/bumperbot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/abood/ros2_test/install/turtlesim_catch_them_all:/home/abood/ros2_test/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/abood/bumperbot_ws/build/bumperbot_controller

@@ -8,9 +8,26 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 
+#use ament_cmake_python to install Python modules
+find_package(ament_cmake_python REQUIRED)
+#use ament_cmake to find other dependencies
+find_package(rclcpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+
+#use ament_cmake_python to install Python modules
+ament_python_install_package(${PROJECT_NAME})
+
 install(
   DIRECTORY config launch
   DESTINATION share/${PROJECT_NAME}
+)
+
+#install Python executables 
+install(PROGRAMS
+  ${PROJECT_NAME}/simple_controller.py  
+  
+  DESTINATION lib/${PROJECT_NAME}
 )
 
 if(BUILD_TESTING)
