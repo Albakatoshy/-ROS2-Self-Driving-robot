@@ -2,18 +2,19 @@ joy_teleop:
   ros__parameters:
     move:
       type: topic
-      interface_type: geometry_msgs/msg/Twist  # ✅ must be interface_type for your version
-      topic_name: /bumperbot_controller/cmd_vel
+      interface_type: geometry_msgs/msg/TwistStamped  # ✅ must be interface_type for your version
+      topic_name: bumperbot_controller/cmd_vel
 
       deadman_buttons: [5]  # RB
 
       axis_mappings:
-        linear-x:
-          axis: 1   # Left stick vertical
+        twist-linear-x: # Left stick vertical
+          axis: 1
           scale: 1.0
           offset: 0.0
 
-        angular-z:
-          axis: 3   # Right stick horizontal
+        twist-angular-z: # Right stick horizontal
+          axis: 3
           scale: 1.0
-          offset: 0.0
+          offset: 0.0  
+

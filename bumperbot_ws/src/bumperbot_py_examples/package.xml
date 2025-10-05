@@ -17,6 +17,12 @@
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>rclpy_interfaces</exec_depend>  
   <exec_depend>turtlesim</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf_transformations</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>bumperbot_msgs</exec_depend> 
+  <exec_depend>tf_transformations</exec_depend> 
+  
 
   <export>
     <build_type>ament_python</build_type>
