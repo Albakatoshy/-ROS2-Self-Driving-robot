@@ -1,0 +1,5 @@
+bumperbot_ws/build/
+bumperbot_ws/install/
+bumperbot_ws/log/
+bumperbot_ws/src/.vscode/
+*.db
