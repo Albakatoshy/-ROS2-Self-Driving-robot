@@ -1,9 +1,30 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import DeclareLaunchArgument, GroupAction
+from launch.actions import DeclareLaunchArgument, GroupAction , OpaqueFunction
 from launch.substitutions import LaunchConfiguration
 from launch.conditions import IfCondition, UnlessCondition
 
+
+def noisy_controller(context, *args, **kwargs):
+    wheel_radius = float(LaunchConfiguration("wheel_radius").perform(context))
+    wheel_separation = float(LaunchConfiguration("wheel_separation").perform(context))
+    wheel_radius_error = float(LaunchConfiguration("wheel_radius_error").perform(context))
+    wheel_separation_error = float(LaunchConfiguration("wheel_separation_error").perform(context))
+
+    # Create the noisy_controller node with perturbed parameters depending on the errors 
+
+    noisy_controller_node = Node(
+        package="bumperbot_controller",
+        executable="noisy_controller.py",
+        parameters=[
+            {"wheel_radius":wheel_radius + wheel_radius_error , 
+             "wheel_separation": wheel_separation + wheel_separation_error}
+        ]
+    )
+
+    return [noisy_controller_node]
+        
+   
 
 def generate_launch_description():
     # Declare launch arguments first
@@ -23,11 +44,20 @@ def generate_launch_description():
         "use_simple_controller", default_value="True"
     )
 
+    wheel_radius_error_argument = DeclareLaunchArgument(
+        "wheel_radius_error", default_value="0.005"
+    )
+
+    wheel_separation_error_argument = DeclareLaunchArgument(
+        "wheel_separation_error", default_value="0.02"       
+    )
+
     # Get launch configurations
     use_python = LaunchConfiguration("use_python")
     wheel_radius = LaunchConfiguration("wheel_radius")
     wheel_separation = LaunchConfiguration("wheel_separation")
     use_simple_controller = LaunchConfiguration("use_simple_controller")
+
 
     # Define nodes and actions
     joint_state_broadcaster_spawner = Node(
@@ -63,14 +93,19 @@ def generate_launch_description():
         ]
     )
 
+    noisy_controller_launch = OpaqueFunction(function=noisy_controller)
+
     return LaunchDescription([
         # MUST put arguments first before any nodes that use LaunchConfiguration
         use_python_argument,
         wheel_radius_argument,
         wheel_separation_argument,
+        wheel_radius_error_argument,
+        wheel_separation_error_argument,
         use_simple_controller_argument,
         # Now nodes and actions can safely use LaunchConfiguration
         joint_state_broadcaster_spawner,
         simple_controller,
         wheel_controller_spawner,
+        noisy_controller_launch
     ])
