@@ -100,7 +100,7 @@ def generate_launch_description():
         use_python_argument,
         wheel_radius_argument,
         wheel_separation_argument,
-        wheel_radius_error_argument,
+        wheel_radius_error_argument,    
         wheel_separation_error_argument,
         use_simple_controller_argument,
         # Now nodes and actions can safely use LaunchConfiguration
