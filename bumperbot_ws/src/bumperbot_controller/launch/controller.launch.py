@@ -93,7 +93,10 @@ def generate_launch_description():
         ]
     )
 
-    noisy_controller_launch = OpaqueFunction(function=noisy_controller)
+    noisy_controller_launch = GroupAction(
+    condition=UnlessCondition(use_simple_controller),
+    actions=[OpaqueFunction(function=noisy_controller)]
+)
 
     return LaunchDescription([
         # MUST put arguments first before any nodes that use LaunchConfiguration
